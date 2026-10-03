@@ -35,8 +35,8 @@ The analysis uses three related tables:
 
 The tables were joined using:
 
-- `Product ID` → product `id`
-- `Country Code` → country `alpha-3` code
+- `Product ID` → product id
+- `Country Code` → country alpha-3 code
 
 After cleaning, the main sales dataset contained **1,328 orders**.
 
@@ -57,19 +57,6 @@ The data-cleaning process included:
 - checking logical consistency, including shipping dates and unit costs.
 
 A total of **82 missing country codes (6.17%)** were retained as `Unknown` so that the associated sales information would not be lost.
-
----
-
-## Feature Engineering
-
-Several business metrics were calculated from the original data:
-
-- **Revenue** = Units Sold × Unit Price
-- **Total Cost** = Units Sold × Unit Cost
-- **Profit** = Revenue − Total Cost
-- **Shipping Time** = Ship Date − Order Date
-
-Additional time-based features were created for year and day-of-week analysis.
 
 ---
 
@@ -195,22 +182,6 @@ Based on the analysis:
 
 ---
 
-## Repository Structure
-
-```text
-Exploratory-data-analysis-for-online-store/
-│
-├── README.md
-├── online_store_eda.ipynb
-└── data/
-    ├── events.csv
-    ├── products.csv
-    └── countries.csv
-```
-
-> If the original datasets cannot be shared publicly, the `data/` folder can be omitted and the data source can be described instead.
-
----
 
 ## Skills Demonstrated
 
@@ -228,8 +199,3 @@ This project demonstrates practical experience with:
 - data visualization;
 - translating analytical results into business insights and recommendations.
 
----
-
-## Note
-
-This project is intended as a portfolio project demonstrating an end-to-end exploratory data analysis workflow in Python.
